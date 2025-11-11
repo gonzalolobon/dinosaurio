@@ -17,8 +17,8 @@ public class enemigo2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.down * velocidad * Time.deltaTime);
-        if (transform.position.y < posiciionMinima.y)
+        transform.Translate(Vector2.left * velocidad * Time.deltaTime);
+        if (transform.position.x < posiciionMinima.x)
         {
             //Destroy(gameObject, 1f);
 
