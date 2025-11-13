@@ -41,4 +41,18 @@ public class PERSONAJECONTROL : MonoBehaviour
             WEA.SetActive(false);
         }
     }
+    public void TipoBool(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            animator.SetBool("agacharse", true);
+        }
+
+
+        if (value.canceled)
+        {
+            animator.SetBool("agacharse", false);
+        }
+
+    }
 }
