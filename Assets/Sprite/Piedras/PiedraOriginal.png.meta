@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c5cd556026f992847ac56d53f58b9449
+guid: 505d68bf6fcda3f4db7531443489d6ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -653881820418041439
-    second: platillo_0
+      213: -6772130215312373940
+    second: PiedraOriginal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: platillo_0
+      name: PiedraOriginal_0
       rect:
         serializedVersion: 2
-        x: 82
-        y: 168
-        width: 448
-        height: 148
+        x: 0
+        y: 8
+        width: 1024
+        height: 1503
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a995e0e2f1fce6f0800000000000000
-      internalID: -653881820418041439
+      spriteID: c47cd9f037f8402a0800000000000000
+      internalID: -6772130215312373940
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      platillo_0: -653881820418041439
+      PiedraOriginal_0: -6772130215312373940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
