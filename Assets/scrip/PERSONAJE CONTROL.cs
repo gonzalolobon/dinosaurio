@@ -7,6 +7,8 @@ public class PERSONAJECONTROL : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] float saltoAltura;
     [SerializeField] private GameObject WEA;
+    [SerializeField] AudioSource AudioSource;
+    [SerializeField] AudioClip[] sonidos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,6 +29,9 @@ public class PERSONAJECONTROL : MonoBehaviour
             animator.SetBool("SALTAR", true);
             rb.linearVelocity = Vector2.zero;
             rb.AddForce(Vector2.up * saltoAltura);
+
+            AudioSource.clip = sonidos[0];
+            AudioSource.Play();
         }
     }
 
@@ -46,6 +51,9 @@ public class PERSONAJECONTROL : MonoBehaviour
         if (value.started)
         {
             animator.SetBool("agacharse", true);
+
+            AudioSource.clip = sonidos[1];
+            AudioSource.Play();
         }
 
 
