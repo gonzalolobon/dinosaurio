@@ -11,12 +11,12 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update
-    {
-        if (PERSONAJECONTROL.vida <= 0)
-        {
-            imagenPerder.SetActive(true);
-            StartCoroutine(CargarCreditos());
-        }
-    }
+    //void Update()
+    //{
+    //    if (PERSONAJECONTROL.vida <= 0)
+    //    {
+    //        imagenPerder.SetActive(true);
+    //        StartCoroutine(CargarCreditos());
+    //    }
+    //}
 }
