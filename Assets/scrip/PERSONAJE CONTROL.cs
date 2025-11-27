@@ -9,6 +9,7 @@ public class PERSONAJECONTROL : MonoBehaviour
     [SerializeField] private GameObject WEA;
     [SerializeField] AudioSource AudioSource;
     [SerializeField] AudioClip[] sonidos;
+    [SerializeField] public int vida;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -45,6 +46,14 @@ public class PERSONAJECONTROL : MonoBehaviour
         {
             WEA.SetActive(false);
         }
+        else if (collision.transform.tag == "piedra")
+            vida = vida - 1;
+            if(vida<=0)
+            {
+                Destroy(gameObject);
+            }
+        
+        
     }
     public void TipoBool(InputAction.CallbackContext value)
     {
