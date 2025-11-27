@@ -4,19 +4,22 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] PERSONAJECONTROL PERSONAJECONTROL;
     [SerializeField] GameObject imagenPerder;
+    [SerializeField] GameObject enemigo2;
+    [SerializeField] int vida;
+    [SerializeField] enemigo2 enemigo2scrip;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
     }
+    public void ReiniciarJuego()
+    {
+        imagenPerder.SetActive(false);
 
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    if (PERSONAJECONTROL.vida <= 0)
-    //    {
-    //        imagenPerder.SetActive(true);
-    //        StartCoroutine(CargarCreditos());
-    //    }
-    //}
-}
+
+
+        // Activar nuevamente el enemigo
+        enemigo2.SetActive(true);
+        enemigo2scrip.EnemigoReiniciar();
+    }
+    }

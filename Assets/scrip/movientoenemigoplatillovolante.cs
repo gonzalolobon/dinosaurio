@@ -27,4 +27,9 @@ public class enemigo2 : MonoBehaviour
            
         }
     }
+    public void EnemigoReiniciar()
+    {
+        transform.position = posicionInicial;
+        velocidad = 5;
+    }
 }
